@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Find a Nanny</title>
+  <link rel="stylesheet" href="css/anny.css" />
+</head>
+<nav>
+    <div class="navbar">
+       <button class="nav-toggle" id="navToggle">☰</button>
+        <ul class="nav-links left-links">
+       <li> <a href="index.html">Home</a></li>
+       <li><a href="about.html">About us</a></li>
+        <li><a href="contact.html">Contact us</a></li>
+        </ul>
+        <div class="logo">
+            <img src="my images/Nanny Sticker.jpeg" alt="Logo" class="logo">
+        </div>
+        <ul class="nav-links right-links">
+        <li><a href="resources.html">Resources</a></li>
+        <li><a href="service.html">Services </a></li>
+        <li><a href="Ournanny.html">Our Nannies</a></li>
+        </ul>
+    </div>
+</nav>
+<body>
+  <header class="header">
+    <h1>🔍 Find a Nanny</h1>
+    <p>Browse loving, verified nannies in your area and find the perfect fit for your family.</p>
+  </header>
+
+  <section class="filters">
+    <h2>🧩 Filter by:</h2>
+    <form>
+      <label>
+        Location:
+        <input type="text" placeholder="e.g. Brooklyn, NY" />
+      </label>
+      <label>
+        Availability:
+        <select>
+          <option value="">Any</option>
+          <option value="full-time">Full-Time</option>
+          <option value="part-time">Part-Time</option>
+          <option value="weekends">Weekends</option>
+        </select>
+      </label>
+      <label>
+        Experience Level:
+        <select>
+          <option value="">Any</option>
+          <option value="1">1+ years</option>
+          <option value="3">3+ years</option>
+          <option value="5">5+ years</option>
+        </select>
+      </label>
+      <button type="submit" class="filter-button">Search</button>
+    </form>
+  </section>
+
+  <section class="nanny-grid">
+    <div class="nanny-card">
+      <h3>👩 Sarah L.</h3>
+      <p><strong>Location:</strong> Queens, NY</p>
+      <p><strong>Experience:</strong> 5 years</p>
+      <p><strong>Availability:</strong> Weekdays, 9am–6pm</p>
+      <a href="#" class="view-profile">View Profile</a>
+    </div>
+    <div class="nanny-card">
+      <h3>👩🏽 Mia R.</h3>
+      <p><strong>Location:</strong> Brooklyn, NY</p>
+      <p><strong>Experience:</strong> 3 years</p>
+      <p><strong>Availability:</strong> Evenings & Weekends</p>
+      <a href="#" class="view-profile">View Profile</a>
+    </div>
+  </section>
+
+  <section class="cta">
+    <p>Haven’t created an account yet?</p>
+    <a href="/contact.html" class="cta-button">✨ Join Now to Contact Nannies</a>
+  </section>
+  <script src="scripts.js"></script>
+</body>
+</html>

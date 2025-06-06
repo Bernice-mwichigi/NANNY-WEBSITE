@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Find a Babysitter</title>
+  <link rel="stylesheet" href="css/sitter.css" />
+</head>
+<nav>
+    <div class="navbar">
+       <button class="nav-toggle" id="navToggle">☰</button>
+        <ul class="nav-links left-links">
+       <li> <a href="index.html">Home</a></li>
+       <li><a href="about.html">About us</a></li>
+        <li><a href="contact.html">Contact us</a></li>
+        </ul>
+        <div class="logo">
+            <img src="my images/Nanny Sticker.jpeg" alt="Logo" class="logo">
+        </div>
+        <ul class="nav-links right-links">
+        <li><a href="resources.html">Resources</a></li>
+        <li><a href="service.html">Services </a></li>
+        <li><a href="Ournanny.html">Our Nannies</a></li>
+        </ul>
+    </div>
+</nav>
+<body>
+  <header class="header">
+    <h1>🧑‍🍼 Find a Babysitter</h1>
+    <p>Explore trusted, friendly babysitters in your area ready to help when you need them.</p>
+  </header>
+
+  <section class="filters">
+    <h2>🎯 Search by:</h2>
+    <form>
+      <label>
+        Location:
+        <input type="text" placeholder="e.g. San Diego, CA" />
+      </label>
+      <label>
+        Time of Day:
+        <select>
+          <option value="">Any</option>
+          <option value="day">Daytime</option>
+          <option value="evening">Evening</option>
+          <option value="overnight">Overnight</option>
+        </select>
+      </label>
+      <label>
+        Years of Experience:
+        <select>
+          <option value="">Any</option>
+          <option value="1">1+ years</option>
+          <option value="2">2+ years</option>
+          <option value="5">5+ years</option>
+        </select>
+      </label>
+      <button type="submit" class="filter-button">Find Sitters</button>
+    </form>
+  </section>
+
+  <section class="sitter-grid">
+    <div class="sitter-card">
+      <h3>🧑 Emily W.</h3>
+      <p><strong>Location:</strong> San Diego, CA</p>
+      <p><strong>Experience:</strong> 2 years</p>
+      <p><strong>Availability:</strong> Evenings & Weekends</p>
+      <a href="#" class="view-profile">View Profile</a>
+    </div>
+    <div class="sitter-card">
+      <h3>👩‍🦱 Jada M.</h3>
+      <p><strong>Location:</strong> Oceanside, CA</p>
+      <p><strong>Experience:</strong> 4 years</p>
+      <p><strong>Availability:</strong> Overnights</p>
+      <a href="#" class="view-profile">View Profile</a>
+    </div>
+  </section>
+
+  <section class="cta">
+    <p>Want to contact a sitter? Create your free parent account now.</p>
+    <a href="parent.html" class="cta-button">🌟 Sign Up to Get Started</a>
+  </section>
+  <script src="scripts.js"></script>
+</body>
+</html>

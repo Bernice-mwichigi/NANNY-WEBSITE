@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nanny Service | Get Started</title>
+  <link rel="stylesheet" href="css/form.css" />
+</head>
+
+<body>
+  <div class="container">
+    
+    <form id="get-started-form">
+      <h2 class="title">Get Started</h2>
+
+      <label for="role">I’m signing up as</label>
+      <select id="role" name="role" required>
+        <option value="" disabled selected>Select a role</option>
+        <option value="parent">Parent</option>
+        <option value="nanny">Nanny</option>
+        <option value="sitter">Sitter</option>
+      </select>
+
+      <label for="name">Full Name</label>
+      <input type="text" id="name" name="name" placeholder="Jane Doe" required />
+
+      <label for="email">Email</label>
+      <input type="email" id="email" name="email" placeholder="email@example.com" required />
+
+      <button type="submit" class="cta-btn">Get Started</button>
+    </form>
+
+    
+    <div id="thank-you" class="thanks hidden" aria-live="polite">
+      <h3>Thank you for submitting the form!</h3>
+    </div>
+  </div>
+
+  
+  <script>
+  const form     = document.getElementById('get-started-form');
+  const thankYou = document.getElementById('thank-you');
+  const roleSel  = document.getElementById('role');
+
+  
+  function redirectAfterThankYou() {
+       let target = '/';
+
+    const chosenRole = roleSel.value;
+    if (chosenRole) {
+      const attrName = `data-home-${chosenRole}`;
+      target = roleSel.getAttribute(attrName) || target;
+    }
+    setTimeout(() => {
+      window.location.href = target;
+    }, 2500);
+  }
+
+  form.addEventListener('submit', (e) => {
+    e.preventDefault();          
+    form.reset();                
+   form.classList.add('hidden'); 
+        thankYou.classList.remove('hidden');
+    redirectAfterThankYou();      
+  });
+</script>
+</body>
+</html>

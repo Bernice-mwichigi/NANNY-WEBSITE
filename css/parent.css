@@ -1,0 +1,162 @@
+.navbar {
+  font-size: 1px;
+    padding: 4px;
+    display: flex;
+    justify-content: center;
+    gap: 2cm;
+    align-items: center;
+    margin:0.5cm;
+    margin-top: 0.1cm;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    flex-wrap: wrap;
+    position: sticky;
+  
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap:1.5rem;
+}
+.nav-links li {
+    margin-right: 5px;
+}
+.nav-links a {
+    text-decoration: none;
+    color:#2a2a72; 
+    font-size: 25px;
+    font-weight: bold;
+    transition: color 0.3s ease;
+    padding: 10px 15px;
+}
+
+.nav-links a:hover {
+    color: #e76f51;
+}
+
+.nav-toggle {
+    display: none;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    position: relative;
+    z-index: 1001;
+    margin-left: auto; 
+}
+.logo {
+    height: 70px;
+    width: 100px;
+    align-items: center;
+}
+body {
+  margin: 0;
+  font-family:Poppins;
+  font-size: 25px;
+  line-height: 1.6;
+  background-color: #fff0f5;
+  color: #333;
+  padding: 0 1rem;
+}
+
+h1, h2 {
+  color: #4a90e2; 
+}
+
+.header {
+  text-align: center;
+  padding: 2rem 1rem 1rem;
+  font-size: 25px;
+  font-family: Poppins;
+}
+
+.header h1 {
+  font-size: 35px;
+}
+
+.header p {
+  font-size: 25px;
+  margin-top: 25px;
+}
+
+section {
+  margin: 2rem auto;
+  max-width: 800px;
+  background: #ffffff;
+  border-radius: 16px;
+  padding: 1.5rem;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+}
+
+ol, ul {
+  padding-left: 1.25rem;
+}
+
+li {
+  margin-bottom: 0.75rem;
+}
+
+.cta {
+  text-align: center;
+  justify-self: center;
+}
+
+.cta-button {
+  display: inline-block;
+  justify-content: center;
+  justify-self: center;
+  background-color: #ffd700;
+  color: #000;
+  font-weight: bold;
+  padding: 0.75rem 1.5rem;
+  border-radius: 12px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+  background-color: #e6c200;
+}
+@media (max-width: 600px) {
+  .header h1 {
+    font-size: 1.5rem;
+  }
+
+  .header p {
+    font-size: 1rem;
+  }
+
+  section {
+    padding: 1rem;
+  }
+
+  .cta-button {
+    width: auto;
+    padding: 1rem;
+  }
+}
+@media screen and (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: left;
+    gap: 0.5rem;
+    margin-bottom: 1cm;
+    font-size: 23px;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    gap: 0.5rem;
+    width: 100%;
+    display: none;
+  }
+
+  .nav-links.show {
+    display: flex;
+  }
+
+  .nav-toggle {
+    display: block;
+    padding : 0 4cm ;
+    font-size: 23px;
+  }}

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Select Care Duration</title>
+  <link rel="stylesheet" href="css/duration.css" />
+</head>
+<nav>
+    <div class="navbar">
+       <button class="nav-toggle" id="navToggle">☰</button>
+        <ul class="nav-links left-links">
+       <li> <a href="index.html">Home</a></li>
+       <li><a href="about.html">About us</a></li>
+        <li><a href="contact.html">Contact us</a></li>
+        </ul>
+        <div class="logo">
+            <img src="my images/Nanny Sticker.jpeg" alt="Logo" class="logo">
+        </div>
+        <ul class="nav-links right-links">
+        <li><a href="resources.html">Resources</a></li>
+        <li><a href="service.html">Services </a></li>
+        <li><a href="Ournanny.html">Our Nannies</a></li>
+        </ul>
+    </div>
+</nav>
+<body>
+  <header class="header">
+    <h1>📆 Select Care Duration</h1>
+    <p>How long do you need care for? Choose a time frame to match with the right sitter or nanny.</p>
+  </header>
+
+  <section class="duration-form">
+    <form>
+      <label>
+        Type of Care:
+        <select required>
+          <option value="">Select one</option>
+          <option value="hourly">Hourly</option>
+          <option value="half-day">Half Day</option>
+          <option value="full-day">Full Day</option>
+          <option value="overnight">Overnight</option>
+          <option value="recurring">Recurring (Weekly/Monthly)</option>
+        </select>
+      </label>
+
+      <label>
+        Start Date & Time:
+        <input type="datetime-local" required />
+      </label>
+
+      <label>
+        End Date & Time:
+        <input type="datetime-local" required />
+      </label>
+
+      <button type="submit" class="submit-button">Next</button>
+    </form>
+  </section>
+  <script src="scripts.js"></script>
+</body>
+</html>
