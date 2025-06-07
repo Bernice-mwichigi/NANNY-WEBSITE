@@ -8,6 +8,6 @@ A responsive and elegant nanny services platform designed with parents and careg
 - **Gold** strategically draws attention to CTAs to improve engagement and conversions.
 
 ---
-i have been able to add Transform css style where my service cards move vertically on contact.
-Ihave also used image logos for our partner instead of text, in the imagination that the image logos are famous
-i have also used a hambugger menu for small screens and i think that my homepage fits real real nice .
+I have Used Transform css style where my service cards move vertically on contact.
+I have also used image logos for Our partners section instead of text, in the imagination that the image logos are famous.
+I have also used a hambugger menu for small screens and i think that my homepage fits really  nice .
